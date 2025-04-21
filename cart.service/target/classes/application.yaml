@@ -13,6 +13,9 @@ spring:
   cloud:
     nacos:
       server-addr: localhost:8848
+    sentinel:
+      transport:
+        dashboard: localhost:8090
   rabbitmq:
     host: 47.109.137.60
     port: 5672

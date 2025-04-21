@@ -1,5 +1,6 @@
 package com.hmall.trade.serivice.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.api.client.CartClient;
 import com.hmall.api.client.ItemClient;
@@ -7,6 +8,7 @@ import com.hmall.api.dto.ItemDTO;
 import com.hmall.api.dto.OrderDetailDTO;
 import com.hmall.common.exception.BadRequestException;
 import com.hmall.common.utils.UserContext;
+import com.hmall.trade.constants.MQConstants;
 import com.hmall.trade.domain.dto.OrderFormDTO;
 import com.hmall.trade.domain.po.Order;
 import com.hmall.trade.domain.po.OrderDetail;
@@ -14,6 +16,8 @@ import com.hmall.trade.mapper.OrderMapper;
 import com.hmall.trade.serivice.IOrderDetailService;
 import com.hmall.trade.serivice.IOrderService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -34,6 +38,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements IOrderService {
 
 //    private final IItemService itemService;
@@ -43,6 +48,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private final ItemClient itemClient;
 
     private final CartClient cartClient;
+
+    private final RabbitTemplate rabbitTemplate;
+
     @Override
     @Transactional
     public Long createOrder(OrderFormDTO orderFormDTO) {
@@ -85,6 +93,16 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         } catch (Exception e) {
             throw new RuntimeException("库存不足！");
         }
+
+        //5.发送延迟消息，检测订单支付状态
+        rabbitTemplate.convertAndSend(
+                MQConstants.DELAY_EXCHANGE_NAME,
+                MQConstants.DELAY_ORDER_KEY,
+                order.getId(),
+                message ->{
+                    message.getMessageProperties().setDelay(900000);
+                    return message;
+                });
         return order.getId();
     }
 
@@ -111,5 +129,32 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
             details.add(detail);
         }
         return details;
+    }
+
+    @Override
+    public void cancelOrder(Long orderId) {
+        //标记订单为已关闭
+        Order order = new Order();
+        order.setId(orderId);
+        order.setStatus(5);
+        order.setUpdateTime(LocalDateTime.now());
+        updateById(order);
+        //恢复库存
+        QueryWrapper<OrderDetail> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("order_id",orderId);
+        OrderDetail orderDetail = detailService.getOne(queryWrapper);
+        if (orderDetail == null) {
+            log.info("OrderDetail not found for order ID: {}",orderId);
+            return;
+        }
+
+        Long itemId = orderDetail.getItemId();
+        ItemDTO itemDTO = itemClient.queryItemById(itemId);
+        if (itemDTO == null) {
+            log.info("ItemDTO not found for item ID: {}", itemId);
+            return;
+        }
+        itemDTO.setStock(itemDTO.getStock() + orderDetail.getNum());
+        itemClient.updateItem(itemDTO);
     }
 }

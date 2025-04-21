@@ -9866,3 +9866,865 @@ app_requested
 17:03:36:088  INFO 28588 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
 17:03:36:091  INFO 28588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 17:03:51:803  INFO 28588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+17:09:53:307  INFO 3288 --- [main] com.hmall.trade.tradeApplication         : Starting tradeApplication using Java 11.0.26 on JUN with PID 3288 (D:\javacode\heima-mall\hmall\trade-service\target\classes started by lenovo in D:\javacode\heima-mall\hmall)
+17:09:53:308 DEBUG 3288 --- [main] com.hmall.trade.tradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:09:53:308  INFO 3288 --- [main] com.hmall.trade.tradeApplication         : The following 1 profile is active: "local"
+17:09:54:031  INFO 3288 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7ebd8172-583d-3844-999e-a97d5401d1f2
+17:09:54:285  INFO 3288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+17:09:54:286  INFO 3288 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+17:09:54:286  INFO 3288 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+17:09:54:287  INFO 3288 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+17:09:54:290  INFO 3288 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+17:09:54:298  INFO 3288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:09:54:298  INFO 3288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:09:54:390  INFO 3288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:09:54:390  INFO 3288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+17:09:55:544  INFO 3288 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+17:09:55:581  INFO 3288 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+17:09:56:278  INFO 3288 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:09:56:908  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 0de6a258-e17b-47f0-ab17-23275d0165fd
+17:09:56:933  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 3 keys and 6 values 
+17:09:56:948  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+17:09:56:954  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+17:09:56:956  WARN 3288 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:09:56:961  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+17:09:56:968  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+17:09:56:973  INFO 3288 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+17:09:56:974  WARN 3288 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:09:56:975  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] RpcClient init label, labels = {module=naming, source=sdk}
+17:09:56:976  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:09:56:976  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:09:56:976  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:09:56:977  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:09:58:548  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Success to connect to server [localhost:8848] on start up, connectionId = 1745140198340_127.0.0.1_59085
+17:09:58:549  INFO 3288 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Notify connected event to listeners.
+17:09:58:550  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:09:58:551  INFO 3288 --- [main] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1124/0x0000000800753c40
+17:09:58:633  INFO 3288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+17:09:58:650  INFO 3288 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.249.1:8085 register finished
+17:09:59:152  INFO 3288 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Receive server push request, request = NotifySubscriberRequest, requestId = 168
+17:09:59:167  INFO 3288 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Ack server push request, request = NotifySubscriberRequest, requestId = 168
+17:09:59:372  INFO 3288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:09:59:376  INFO 3288 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:09:59:413  INFO 3288 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:09:59:545  INFO 3288 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+17:09:59:744  INFO 3288 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:0/SimpleConnection@752180c4 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 59093]
+17:10:00:069  INFO 3288 --- [main] com.hmall.trade.tradeApplication         : Started tradeApplication in 7.67 seconds (JVM running for 8.529)
+17:46:17:634  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+17:46:18:330  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1f6d3a81: tags=[[amq.ctag-Fc_tusSSEcbgPvyAMG-Dag]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@752180c4 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 59093], acknowledgeMode=AUTO local queue size=0
+17:46:18:350  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+17:46:18:360 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.net.SocketException: Network is unreachable: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 16 common frames omitted
+
+17:46:18:360  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+17:46:23:475  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@268953f9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+17:46:23:477  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+17:46:23:703  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:3/SimpleConnection@3e5bf800 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 49804]
+18:15:31:676  INFO 3288 --- [nacos-grpc-client-executor-563] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Receive server push request, request = ClientDetectionRequest, requestId = 180
+18:15:31:676  INFO 3288 --- [nacos-grpc-client-executor-563] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Ack server push request, request = ClientDetectionRequest, requestId = 180
+18:15:56:576  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+18:15:56:839  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@698f8bc0: tags=[[amq.ctag-EMQtG9RR5vXEhNUPd6dZfw]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@3e5bf800 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 49804], acknowledgeMode=AUTO local queue size=0
+18:15:56:841  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:15:56:949  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:4/SimpleConnection@142d427c [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 51577]
+18:46:34:320  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+18:46:34:748  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@534955a7: tags=[[amq.ctag-4FuHkaWnc1Do3B2Alw9BwA]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@142d427c [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 51577], acknowledgeMode=AUTO local queue size=0
+18:46:34:751  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:46:34:756 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 16 common frames omitted
+
+18:46:34:756  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:46:39:862  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@60b44f7f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+18:46:39:863  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:46:39:865 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+18:46:39:865  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:46:44:968  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4790995b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+18:46:45:000  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+18:46:45:236  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:9/SimpleConnection@14788292 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 56324]
+19:46:44:313  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+19:46:44:558  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@22b3395d: tags=[[amq.ctag-nwTrUNYo6m2s4Nv0045v2Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@14788292 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 56324], acknowledgeMode=AUTO local queue size=0
+19:46:44:573  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+19:46:44:578 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 16 common frames omitted
+
+19:46:44:580  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+19:46:49:667  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@482c324d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+19:46:49:671  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+19:46:49:683 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+19:46:49:684  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+19:46:54:780  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@40abb90: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+19:46:54:782  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+19:46:54:991  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:14/SimpleConnection@2a42bdc5 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 52382]
+20:46:53:308  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+20:46:54:300  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@e29e0b4: tags=[[amq.ctag-syCEBXu_P5TWwqUK_CONDw]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@2a42bdc5 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 52382], acknowledgeMode=AUTO local queue size=0
+20:46:54:308  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+20:46:54:312 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 16 common frames omitted
+
+20:46:54:314  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+20:46:59:390  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@19b94aca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+20:46:59:393  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+20:46:59:406 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+20:46:59:406  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+20:47:04:513  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4cd9da77: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+20:47:04:514  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+20:47:05:857  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:19/SimpleConnection@210c34ec [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 59732]
+21:10:47:570  INFO 3288 --- [nacos-grpc-client-executor-2452] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Receive server push request, request = ClientDetectionRequest, requestId = 188
+21:10:47:570  INFO 3288 --- [nacos-grpc-client-executor-2452] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Ack server push request, request = ClientDetectionRequest, requestId = 188
+21:11:38:498  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+21:11:39:397  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@164e9e9e: tags=[[amq.ctag-djWLe9fEjhs3BXrmCdyAiA]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@210c34ec [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 59732], acknowledgeMode=AUTO local queue size=0
+21:11:39:404  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+21:11:39:548  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:20/SimpleConnection@794e3228 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 60817]
+21:30:59:082  INFO 3288 --- [nacos-grpc-client-executor-2575] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Receive server push request, request = ClientDetectionRequest, requestId = 196
+21:30:59:083  INFO 3288 --- [nacos-grpc-client-executor-2575] com.alibaba.nacos.common.remote.client   : [0de6a258-e17b-47f0-ab17-23275d0165fd] Ack server push request, request = ClientDetectionRequest, requestId = 196
+21:31:05:730  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+21:31:06:314  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6d8f050b: tags=[[amq.ctag-FrC7ELciDPmrj0Zaq48TaQ]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@794e3228 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 60817], acknowledgeMode=AUTO local queue size=0
+21:31:06:321  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+21:31:06:731  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:21/SimpleConnection@173b4523 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 61896]
+21:44:46:264  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+21:44:47:001  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@d3aac94: tags=[[amq.ctag-0qqMueQatWTeXH0u6tNCxw]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@173b4523 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 61896], acknowledgeMode=AUTO local queue size=0
+21:44:47:008  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+21:44:47:650  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:22/SimpleConnection@1ffb6348 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 63408]
+22:44:45:823  WARN 3288 --- [AMQP Connection 47.109.137.60:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+22:44:46:829  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@321626ef: tags=[[amq.ctag-cOVezXDx7C3FL4NraRG6pw]], channel=Cached Rabbit Channel: AMQChannel(amqp://hmall@47.109.137.60:5672//hmall,1), conn: Proxy@23eb6d13 Shared Rabbit Connection: SimpleConnection@1ffb6348 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 63408], acknowledgeMode=AUTO local queue size=0
+22:44:46:839  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:44:46:854 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.net.SocketException: Network is unreachable: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: java.net.SocketException: Network is unreachable: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method) ~[na:na]
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.14.2.jar:5.14.2]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 16 common frames omitted
+
+22:44:46:854  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:44:51:921  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6be932d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+22:44:51:924  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:44:51:937 ERROR 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+22:44:51:937  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:44:57:018  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@674d0347: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+22:44:57:020  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:44:57:230  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-19] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#433ae0b0:27/SimpleConnection@5a0b63b6 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 55059]
+22:51:20:041  WARN 3288 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:51:20:042  WARN 3288 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:51:20:045  WARN 3288 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:51:20:054  WARN 3288 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:51:20:260  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+22:51:20:638  INFO 3288 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+22:51:21:360  INFO 3288 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+22:51:21:374  INFO 3288 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+22:51:21:718  INFO 3288 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+22:51:21:719  INFO 3288 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2b526c0e[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+22:51:21:719  INFO 3288 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1745140198340_127.0.0.1_59085
+22:51:21:723  INFO 3288 --- [nacos-grpc-client-executor-3555] c.a.n.c.remote.client.grpc.GrpcClient    : [1745140198340_127.0.0.1_59085]Ignore complete event,isRunning:false,isAbandon=false
+22:51:21:739  INFO 3288 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@79d27b8d[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 3556]
+22:51:21:750  INFO 3288 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+22:53:53:406  INFO 34368 --- [main] com.hmall.trade.tradeApplication         : Starting tradeApplication using Java 11.0.26 on JUN with PID 34368 (D:\javacode\heima-mall\hmall\trade-service\target\classes started by lenovo in D:\javacode\heima-mall\hmall)
+22:53:53:407 DEBUG 34368 --- [main] com.hmall.trade.tradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+22:53:53:407  INFO 34368 --- [main] com.hmall.trade.tradeApplication         : The following 1 profile is active: "local"
+22:53:54:420  INFO 34368 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a56cd999-1b90-303f-94dd-62b1c02fb39d
+22:53:54:707  INFO 34368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+22:53:54:708  INFO 34368 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+22:53:54:708  INFO 34368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+22:53:54:709  INFO 34368 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22:53:54:715  INFO 34368 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+22:53:54:722  INFO 34368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:53:54:723  INFO 34368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+22:53:54:834  INFO 34368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:53:54:836  INFO 34368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1392 ms
+22:53:56:248  INFO 34368 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+22:53:56:325  INFO 34368 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+22:53:56:541  INFO 34368 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'pay-service' URL not provided. Will try picking an instance via load-balancing.
+22:53:57:223  INFO 34368 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+22:53:57:862  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0
+22:53:57:900  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 20 ms to scan 1 urls, producing 3 keys and 6 values 
+22:53:57:922  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+22:53:57:933  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 3 keys and 10 values 
+22:53:57:935  WARN 34368 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+22:53:57:940  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+22:53:57:947  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+22:53:57:955  INFO 34368 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+22:53:57:960  WARN 34368 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+22:53:57:961  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] RpcClient init label, labels = {module=naming, source=sdk}
+22:53:57:966  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+22:53:57:968  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+22:53:57:969  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+22:53:57:976  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+22:54:00:068  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Success to connect to server [localhost:8848] on start up, connectionId = 1745160839866_127.0.0.1_56782
+22:54:00:069  INFO 34368 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Notify connected event to listeners.
+22:54:00:070  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+22:54:00:070  INFO 34368 --- [main] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1125/0x0000000800752c40
+22:54:00:138  INFO 34368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+22:54:00:148  INFO 34368 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.249.1:8085 register finished
+22:54:00:512  INFO 34368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+22:54:00:514  INFO 34368 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+22:54:00:533  INFO 34368 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+22:54:00:598  INFO 34368 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+22:54:00:654  INFO 34368 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Receive server push request, request = NotifySubscriberRequest, requestId = 204
+22:54:00:668  INFO 34368 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Ack server push request, request = NotifySubscriberRequest, requestId = 204
+22:54:00:888  INFO 34368 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#25d9291a:0/SimpleConnection@524c3e54 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 56792]
+22:54:03:217  INFO 34368 --- [main] com.hmall.trade.tradeApplication         : Started tradeApplication in 10.644 seconds (JVM running for 12.397)
+22:56:23:029  INFO 34368 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:56:23:029  INFO 34368 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+22:56:23:030  INFO 34368 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+22:56:23:076  INFO 34368 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+22:56:25:442  INFO 34368 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+22:56:25:546 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453 HTTP/1.1
+22:56:25:546 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+22:56:25:546 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (339ms)
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 20 Apr 2025 14:56:25 GMT
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+22:56:25:886 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+22:56:25:888 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"1713453","name":"小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】","price":12800,"stock":9991,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp","category":"拉拉裤","brand":"小鹿叮叮","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+22:56:25:888 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (393-byte body)
+22:56:25:955 DEBUG 34368 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+22:56:25:986 DEBUG 34368 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1913970014440931329(Long), 25600(Integer), 3(Integer), 1(Long), 1(Integer)
+22:56:26:132 DEBUG 34368 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+22:56:26:142 DEBUG 34368 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+22:56:26:144 DEBUG 34368 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1913970014440931329(Long), 1713453(Long), 2(Integer), 小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】(String), {}(String), 12800(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp(String)
+22:56:26:238  INFO 34368 --- [nacos-grpc-client-executor-39] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Receive server push request, request = NotifySubscriberRequest, requestId = 215
+22:56:26:238  INFO 34368 --- [nacos-grpc-client-executor-39] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Ack server push request, request = NotifySubscriberRequest, requestId = 215
+22:56:26:274 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=1713453 HTTP/1.1
+22:56:26:274 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+22:56:26:274 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+22:56:26:488 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (214ms)
+22:56:26:489 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+22:56:26:489 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+22:56:26:489 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 20 Apr 2025 14:56:26 GMT
+22:56:26:490 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+22:56:26:490 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+22:56:26:490 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:56:26:502 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"1713453","num":2}]
+22:56:26:503 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (280ms)
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Sun, 20 Apr 2025 14:56:26 GMT
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:56:26:784 DEBUG 34368 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+22:56:26:887  INFO 34368 --- [nacos-grpc-client-executor-42] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Receive server push request, request = NotifySubscriberRequest, requestId = 216
+22:56:26:888  INFO 34368 --- [nacos-grpc-client-executor-42] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Ack server push request, request = NotifySubscriberRequest, requestId = 216
+22:56:28:995 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1713453 HTTP/1.1
+22:56:28:995 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+22:56:28:995 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+22:56:29:134 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (138ms)
+22:56:29:134 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 20 Apr 2025 14:56:29 GMT
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+22:56:29:135 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"1713453","name":"小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】","price":12800,"stock":9989,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp","category":"拉拉裤","brand":"小鹿叮叮","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+22:56:29:136 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (393-byte body)
+22:56:29:137 DEBUG 34368 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+22:56:29:138 DEBUG 34368 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1913970027824955393(Long), 25600(Integer), 3(Integer), 1(Long), 1(Integer)
+22:56:29:290 DEBUG 34368 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+22:56:29:290 DEBUG 34368 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+22:56:29:291 DEBUG 34368 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1913970027824955393(Long), 1713453(Long), 2(Integer), 小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】(String), {}(String), 12800(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp(String)
+22:56:29:434 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=1713453 HTTP/1.1
+22:56:29:434 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+22:56:29:434 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+22:56:29:703 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (268ms)
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 20 Apr 2025 14:56:29 GMT
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"1713453","num":2}]
+22:56:29:704 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (189ms)
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Sun, 20 Apr 2025 14:56:29 GMT
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:56:29:894 DEBUG 34368 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+22:56:30:125 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:56:30:125 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970027824955393(Long)
+22:56:30:191 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+22:56:36:982 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:56:36:983 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970014440931329(Long)
+22:56:37:042 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+22:56:37:043 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> GET http://pay-service/pay-orders/biz/1913970014440931329 HTTP/1.1
+22:56:37:043 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> END HTTP (0-byte body)
+22:56:37:057 DEBUG 34368 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:56:37:057 DEBUG 34368 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970027824955393(Long)
+22:56:37:129 DEBUG 34368 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+22:56:37:146 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- HTTP/1.1 200 (103ms)
+22:56:37:146 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] connection: keep-alive
+22:56:37:146 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] content-length: 0
+22:56:37:147 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] date: Sun, 20 Apr 2025 14:56:36 GMT
+22:56:37:147 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] keep-alive: timeout=60
+22:56:37:147 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] 
+22:56:37:147 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- END HTTP (0-byte body)
+22:56:37:155 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, update_time=? WHERE id=?
+22:56:37:160 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 5(Integer), 2025-04-20T22:56:37.147528300(LocalDateTime), 1913970014440931329(Long)
+22:56:37:277 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+22:56:37:290 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==>  Preparing: SELECT id,order_id,item_id,num,name,spec,price,image,create_time,update_time FROM order_detail WHERE (order_id = ?)
+22:56:37:290 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==> Parameters: 1913970014440931329(Long)
+22:56:37:353 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : <==      Total: 1
+22:56:37:354 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> GET http://item-service/items/1713453 HTTP/1.1
+22:56:37:354 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> END HTTP (0-byte body)
+22:56:37:631  INFO 34368 --- [nacos-grpc-client-executor-46] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Receive server push request, request = NotifySubscriberRequest, requestId = 219
+22:56:37:632  INFO 34368 --- [nacos-grpc-client-executor-46] com.alibaba.nacos.common.remote.client   : [2d4bc0bd-3b4a-4b72-89ed-7da3b92ef6a0] Ack server push request, request = NotifySubscriberRequest, requestId = 219
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- HTTP/1.1 200 (400ms)
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] connection: keep-alive
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] content-type: application/json
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] date: Sun, 20 Apr 2025 14:56:37 GMT
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] keep-alive: timeout=60
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] transfer-encoding: chunked
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] 
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] {"id":"1713453","name":"小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】","price":12800,"stock":9987,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp","category":"拉拉裤","brand":"小鹿叮叮","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}
+22:56:37:755 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- END HTTP (391-byte body)
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> PUT http://item-service/items HTTP/1.1
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Length: 391
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Type: application/json
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] {"id":"1713453","name":"小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】","price":12800,"stock":9989,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp","category":"拉拉裤","brand":"小鹿叮叮","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}
+22:56:37:757 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> END HTTP (391-byte body)
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- HTTP/1.1 200 (266ms)
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] connection: keep-alive
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] content-length: 0
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] date: Sun, 20 Apr 2025 14:56:38 GMT
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] keep-alive: timeout=60
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+22:56:38:024 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- END HTTP (0-byte body)
+22:56:40:057 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:56:40:057 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970027824955393(Long)
+22:56:40:134 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+22:56:40:135 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> GET http://pay-service/pay-orders/biz/1913970027824955393 HTTP/1.1
+22:56:40:136 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> END HTTP (0-byte body)
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- HTTP/1.1 200 (109ms)
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] connection: keep-alive
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] content-type: application/json
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] date: Sun, 20 Apr 2025 14:56:40 GMT
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] keep-alive: timeout=60
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] transfer-encoding: chunked
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] 
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] {"id":"1913970037761372162","bizOrderNo":"1913970027824955393","payOrderNo":"1913970037744594945","bizUserId":"1","payChannelCode":"balance","amount":25600,"payType":5,"status":3,"expandJson":"","resultCode":"","resultMsg":"","paySuccessTime":"2025-04-20T22:56:37","payOverTime":"2025-04-21T00:56:31","qrCodeUrl":null,"createTime":"2025-04-20T22:56:31","updateTime":"2025-04-20T22:56:36"}
+22:56:40:245 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- END HTTP (388-byte body)
+22:56:40:251 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+22:56:40:251 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2025-04-20T22:56:40.250170(LocalDateTime), 1913970027824955393(Long)
+22:56:40:405 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+22:59:54:120 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=1533902 HTTP/1.1
+22:59:54:120 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+22:59:54:120 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (138ms)
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 20 Apr 2025 14:59:54 GMT
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+22:59:54:259 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+22:59:54:260 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"1533902","name":"新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶","price":9700,"stock":9993,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp","category":"牛奶","brand":"纽仕兰","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+22:59:54:260 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (368-byte body)
+22:59:54:262 DEBUG 34368 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+22:59:54:262 DEBUG 34368 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1913970888164786178(Long), 9700(Integer), 3(Integer), 1(Long), 1(Integer)
+22:59:54:406 DEBUG 34368 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+22:59:54:407 DEBUG 34368 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+22:59:54:408 DEBUG 34368 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1913970888164786178(Long), 1533902(Long), 1(Integer), 新西兰进口牛奶 纽仕兰 3.5g蛋白质全脂牛奶 250ml*24整箱装纯牛奶(String), {}(String), 9700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t3526/295/888755633/189982/16ea21b4/5816dce5N70820f42.jpg!q70.jpg.webp(String)
+22:59:54:527 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=1533902 HTTP/1.1
+22:59:54:528 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+22:59:54:528 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (189ms)
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 20 Apr 2025 14:59:54 GMT
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+22:59:54:718 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"1533902","num":1}]
+22:59:54:720 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (176ms)
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Sun, 20 Apr 2025 14:59:54 GMT
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+22:59:54:897 DEBUG 34368 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+22:59:55:091 DEBUG 34368 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:59:55:092 DEBUG 34368 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970888164786178(Long)
+22:59:55:155 DEBUG 34368 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+22:59:58:205 DEBUG 34368 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+22:59:58:206 DEBUG 34368 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970888164786178(Long)
+22:59:58:266 DEBUG 34368 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:00:05:040 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:00:05:041 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913970888164786178(Long)
+23:00:05:129 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:00:05:129 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> GET http://pay-service/pay-orders/biz/1913970888164786178 HTTP/1.1
+23:00:05:129 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> END HTTP (0-byte body)
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- HTTP/1.1 200 (110ms)
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] connection: keep-alive
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] content-type: application/json
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] date: Sun, 20 Apr 2025 15:00:05 GMT
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] keep-alive: timeout=60
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] transfer-encoding: chunked
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] 
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] {"id":"1913970892409532419","bizOrderNo":"1913970888164786178","payOrderNo":"1913970892409532418","bizUserId":"1","payChannelCode":"balance","amount":9700,"payType":5,"status":3,"expandJson":"","resultCode":"","resultMsg":"","paySuccessTime":"2025-04-20T22:59:58","payOverTime":"2025-04-21T00:59:55","qrCodeUrl":null,"createTime":"2025-04-20T22:59:54","updateTime":"2025-04-20T22:59:57"}
+23:00:05:240 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- END HTTP (387-byte body)
+23:00:05:242 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+23:00:05:242 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2025-04-20T23:00:05.240932900(LocalDateTime), 1913970888164786178(Long)
+23:00:05:357 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+23:03:14:078 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=317578 HTTP/1.1
+23:03:14:078 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+23:03:14:078 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (125ms)
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 20 Apr 2025 15:03:14 GMT
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+23:03:14:203 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (397-byte body)
+23:03:14:205 DEBUG 34368 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+23:03:14:206 DEBUG 34368 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1913971726815870977(Long), 28900(Integer), 3(Integer), 1(Long), 1(Integer)
+23:03:14:309 DEBUG 34368 --- [http-nio-8085-exec-10] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+23:03:14:310 DEBUG 34368 --- [http-nio-8085-exec-10] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+23:03:14:310 DEBUG 34368 --- [http-nio-8085-exec-10] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1913971726815870977(Long), 317578(Long), 1(Integer), RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4(String), {"颜色": "红色", "尺码": "21寸"}(String), 28900(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp(String)
+23:03:14:430 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=317578 HTTP/1.1
+23:03:14:430 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+23:03:14:430 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (142ms)
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 20 Apr 2025 15:03:14 GMT
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+23:03:14:574 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 29
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"317578","num":1}]
+23:03:14:575 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (29-byte body)
+23:03:14:721 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (146ms)
+23:03:14:721 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+23:03:14:721 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+23:03:14:722 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Sun, 20 Apr 2025 15:03:14 GMT
+23:03:14:722 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+23:03:14:722 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+23:03:14:722 DEBUG 34368 --- [http-nio-8085-exec-10] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+23:03:14:896 DEBUG 34368 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:03:14:896 DEBUG 34368 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913971726815870977(Long)
+23:03:14:954 DEBUG 34368 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:03:24:823 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:03:24:823 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913971726815870977(Long)
+23:03:24:878 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:03:24:878 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> GET http://pay-service/pay-orders/biz/1913971726815870977 HTTP/1.1
+23:03:24:879 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> END HTTP (0-byte body)
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- HTTP/1.1 200 (98ms)
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] connection: keep-alive
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] content-type: application/json
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] date: Sun, 20 Apr 2025 15:03:24 GMT
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] keep-alive: timeout=60
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] transfer-encoding: chunked
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] 
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] {"id":"1913971730389528578","bizOrderNo":"1913971726815870977","payOrderNo":"1913971730389528577","bizUserId":"1","payChannelCode":"balance","amount":28900,"payType":5,"status":1,"expandJson":"","resultCode":"","resultMsg":"","paySuccessTime":null,"payOverTime":"2025-04-21T01:03:15","qrCodeUrl":null,"createTime":"2025-04-20T23:03:14","updateTime":"2025-04-20T23:03:14"}
+23:03:24:977 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- END HTTP (371-byte body)
+23:03:24:978 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, update_time=? WHERE id=?
+23:03:24:978 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 5(Integer), 2025-04-20T23:03:24.978241300(LocalDateTime), 1913971726815870977(Long)
+23:03:25:085 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+23:03:25:086 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==>  Preparing: SELECT id,order_id,item_id,num,name,spec,price,image,create_time,update_time FROM order_detail WHERE (order_id = ?)
+23:03:25:087 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==> Parameters: 1913971726815870977(Long)
+23:03:25:144 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : <==      Total: 1
+23:03:25:145 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> GET http://item-service/items/317578 HTTP/1.1
+23:03:25:145 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> END HTTP (0-byte body)
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- HTTP/1.1 200 (102ms)
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] connection: keep-alive
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] content-type: application/json
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] date: Sun, 20 Apr 2025 15:03:25 GMT
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] keep-alive: timeout=60
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] transfer-encoding: chunked
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] 
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] {"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":9999,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}
+23:03:25:248 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- END HTTP (394-byte body)
+23:03:25:249 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> PUT http://item-service/items HTTP/1.1
+23:03:25:249 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Length: 395
+23:03:25:249 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Type: application/json
+23:03:25:250 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+23:03:25:250 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] {"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}
+23:03:25:250 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> END HTTP (395-byte body)
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- HTTP/1.1 200 (148ms)
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] connection: keep-alive
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] content-length: 0
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] date: Sun, 20 Apr 2025 15:03:25 GMT
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] keep-alive: timeout=60
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+23:03:25:397 DEBUG 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- END HTTP (0-byte body)
+23:04:34:568 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:04:34:568 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913971726815870977(Long)
+23:04:34:625 DEBUG 34368 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:06:04:178  WARN 34368 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+23:06:04:178  WARN 34368 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+23:06:04:178  WARN 34368 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+23:06:04:178  WARN 34368 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+23:06:04:249  INFO 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+23:06:04:296  INFO 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+23:06:04:651  INFO 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+23:06:05:060  INFO 34368 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+23:06:05:288  INFO 34368 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+23:06:05:294  INFO 34368 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+23:06:05:622  INFO 34368 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+23:06:05:623  INFO 34368 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@46db4843[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+23:06:05:623  INFO 34368 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1745160839866_127.0.0.1_56782
+23:06:05:625  INFO 34368 --- [nacos-grpc-client-executor-173] c.a.n.c.remote.client.grpc.GrpcClient    : [1745160839866_127.0.0.1_56782]Ignore complete event,isRunning:false,isAbandon=false
+23:06:05:629  INFO 34368 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@ed0e839[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 174]
+23:06:05:739  INFO 34368 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+23:06:05:739  INFO 34368 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+23:06:05:741  INFO 34368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+23:06:06:232  INFO 34368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+23:06:13:483  INFO 34760 --- [main] com.hmall.trade.tradeApplication         : Starting tradeApplication using Java 11.0.26 on JUN with PID 34760 (D:\javacode\heima-mall\hmall\trade-service\target\classes started by lenovo in D:\javacode\heima-mall\hmall)
+23:06:13:483 DEBUG 34760 --- [main] com.hmall.trade.tradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+23:06:13:484  INFO 34760 --- [main] com.hmall.trade.tradeApplication         : The following 1 profile is active: "local"
+23:06:14:158  INFO 34760 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a56cd999-1b90-303f-94dd-62b1c02fb39d
+23:06:14:399  INFO 34760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+23:06:14:400  INFO 34760 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+23:06:14:400  INFO 34760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+23:06:14:401  INFO 34760 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+23:06:14:404  INFO 34760 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+23:06:14:412  INFO 34760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+23:06:14:412  INFO 34760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+23:06:14:506  INFO 34760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+23:06:14:506  INFO 34760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 996 ms
+23:06:15:524  INFO 34760 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+23:06:15:567  INFO 34760 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+23:06:15:726  INFO 34760 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'pay-service' URL not provided. Will try picking an instance via load-balancing.
+23:06:16:380  INFO 34760 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+23:06:16:955  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of ed51e4e4-4151-4df0-98b5-96f892918590
+23:06:16:979  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 13 ms to scan 1 urls, producing 3 keys and 6 values 
+23:06:16:993  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
+23:06:16:999  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+23:06:17:000  WARN 34760 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+23:06:17:005  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+23:06:17:011  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+23:06:17:017  INFO 34760 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+23:06:17:018  WARN 34760 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+23:06:17:019  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] RpcClient init label, labels = {module=naming, source=sdk}
+23:06:17:021  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+23:06:17:021  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+23:06:17:021  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+23:06:17:022  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+23:06:18:394  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Success to connect to server [localhost:8848] on start up, connectionId = 1745161578219_127.0.0.1_58928
+23:06:18:394  INFO 34760 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Notify connected event to listeners.
+23:06:18:395  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+23:06:18:395  INFO 34760 --- [main] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1125/0x0000000800752c40
+23:06:18:440  INFO 34760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+23:06:18:450  INFO 34760 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.249.1:8085 register finished
+23:06:18:757  INFO 34760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+23:06:18:760  INFO 34760 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+23:06:18:774  INFO 34760 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+23:06:18:823  INFO 34760 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [47.109.137.60:5672]
+23:06:18:932  INFO 34760 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 222
+23:06:18:944  INFO 34760 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 222
+23:06:19:128  INFO 34760 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#5abbb273:0/SimpleConnection@64c37088 [delegate=amqp://hmall@47.109.137.60:5672//hmall, localPort= 58932]
+23:06:20:081  INFO 34760 --- [main] com.hmall.trade.tradeApplication         : Started tradeApplication in 7.282 seconds (JVM running for 8.916)
+23:06:24:703  INFO 34760 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:06:24:703  INFO 34760 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+23:06:24:704  INFO 34760 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+23:06:24:736  INFO 34760 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+23:06:25:530  INFO 34760 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+23:06:25:592 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=317578 HTTP/1.1
+23:06:25:592 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+23:06:25:593 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (210ms)
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 20 Apr 2025 15:06:25 GMT
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+23:06:25:804 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+23:06:25:805 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+23:06:25:805 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (397-byte body)
+23:06:25:833 DEBUG 34760 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+23:06:25:847 DEBUG 34760 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1913972530540969985(Long), 28900(Integer), 3(Integer), 1(Long), 1(Integer)
+23:06:25:957 DEBUG 34760 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+23:06:25:962 DEBUG 34760 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+23:06:25:963 DEBUG 34760 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1913972530540969985(Long), 317578(Long), 1(Integer), RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4(String), {"颜色": "红色", "尺码": "21寸"}(String), 28900(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp(String)
+23:06:26:082 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=317578 HTTP/1.1
+23:06:26:082 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+23:06:26:082 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+23:06:26:217  INFO 34760 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 223
+23:06:26:219  INFO 34760 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 223
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (169ms)
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 20 Apr 2025 15:06:26 GMT
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+23:06:26:252 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 29
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"317578","num":1}]
+23:06:26:259 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (29-byte body)
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (149ms)
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Sun, 20 Apr 2025 15:06:26 GMT
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+23:06:26:408 DEBUG 34760 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+23:06:26:643 DEBUG 34760 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:06:26:643 DEBUG 34760 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913972530540969985(Long)
+23:06:26:650  INFO 34760 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 224
+23:06:26:651  INFO 34760 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 224
+23:06:26:699 DEBUG 34760 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:06:46:564 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+23:06:46:565 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1913972530540969985(Long)
+23:06:46:620 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+23:06:46:620 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> GET http://pay-service/pay-orders/biz/1913972530540969985 HTTP/1.1
+23:06:46:620 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] ---> END HTTP (0-byte body)
+23:06:46:759 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- HTTP/1.1 200 (139ms)
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] connection: keep-alive
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] content-type: application/json
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] date: Sun, 20 Apr 2025 15:06:46 GMT
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] keep-alive: timeout=60
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] transfer-encoding: chunked
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] 
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] {"id":"1913972534773149699","bizOrderNo":"1913972530540969985","payOrderNo":"1913972534773149698","bizUserId":"1","payChannelCode":"balance","amount":28900,"payType":5,"status":1,"expandJson":"","resultCode":"","resultMsg":"","paySuccessTime":null,"payOverTime":"2025-04-21T01:06:27","qrCodeUrl":null,"createTime":"2025-04-20T23:06:26","updateTime":"2025-04-20T23:06:26"}
+23:06:46:761 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.PayClient           : [PayClient#queryPayOrderByBizOrderNo] <--- END HTTP (371-byte body)
+23:06:46:770 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, update_time=? WHERE id=?
+23:06:46:774 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 5(Integer), 2025-04-20T23:06:46.763658300(LocalDateTime), 1913972530540969985(Long)
+23:06:46:877 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+23:06:46:889 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==>  Preparing: SELECT id,order_id,item_id,num,name,spec,price,image,create_time,update_time FROM order_detail WHERE (order_id = ?)
+23:06:46:889 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : ==> Parameters: 1913972530540969985(Long)
+23:06:46:947 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.h.t.m.OrderDetailMapper.selectOne      : <==      Total: 1
+23:06:46:947 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> GET http://item-service/items/317578 HTTP/1.1
+23:06:46:947 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] ---> END HTTP (0-byte body)
+23:06:47:047 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- HTTP/1.1 200 (100ms)
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] connection: keep-alive
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] content-type: application/json
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] date: Sun, 20 Apr 2025 15:06:47 GMT
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] keep-alive: timeout=60
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] transfer-encoding: chunked
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] 
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] {"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":9999,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}
+23:06:47:048 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemById] <--- END HTTP (394-byte body)
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> PUT http://item-service/items HTTP/1.1
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Length: 395
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] Content-Type: application/json
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] {"id":"317578","name":"RIMOWA 21寸托运箱拉杆箱 SALSA AIR系列果绿色 820.70.36.4","price":28900,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t6934/364/1195375010/84676/e9f2c55f/597ece38N0ddcbc77.jpg!q70.jpg.webp","category":"拉杆箱","brand":"RIMOWA","spec":"{\"颜色\": \"红色\", \"尺码\": \"21寸\"}","sold":0,"commentCount":0,"isAD":false,"status":1}
+23:06:47:049 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] ---> END HTTP (395-byte body)
+23:06:47:195  INFO 34760 --- [nacos-grpc-client-executor-21] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 225
+23:06:47:196  INFO 34760 --- [nacos-grpc-client-executor-21] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 225
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- HTTP/1.1 200 (151ms)
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] connection: keep-alive
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] content-length: 0
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] date: Sun, 20 Apr 2025 15:06:47 GMT
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] keep-alive: timeout=60
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] 
+23:06:47:202 DEBUG 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.hmall.api.client.ItemClient          : [ItemClient#updateItem] <--- END HTTP (0-byte body)
+23:25:05:094  WARN 34760 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+23:25:05:095  WARN 34760 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+23:25:05:095  WARN 34760 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+23:25:05:095  WARN 34760 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+23:25:05:151  INFO 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+23:25:05:201  INFO 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+23:25:05:785  INFO 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+23:25:06:031  INFO 34760 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+23:25:06:142  INFO 34760 --- [nacos-grpc-client-executor-263] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 226
+23:25:06:156  INFO 34760 --- [nacos-grpc-client-executor-263] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 226
+23:25:06:162  INFO 34760 --- [nacos-grpc-client-executor-264] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 227
+23:25:06:173  INFO 34760 --- [nacos-grpc-client-executor-264] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 227
+23:25:06:248  INFO 34760 --- [nacos-grpc-client-executor-265] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Receive server push request, request = NotifySubscriberRequest, requestId = 228
+23:25:06:259  INFO 34760 --- [nacos-grpc-client-executor-265] com.alibaba.nacos.common.remote.client   : [ed51e4e4-4151-4df0-98b5-96f892918590] Ack server push request, request = NotifySubscriberRequest, requestId = 228
+23:25:06:349  INFO 34760 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+23:25:06:351  INFO 34760 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+23:25:06:685  INFO 34760 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+23:25:06:685  INFO 34760 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@48d57ca2[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+23:25:06:685  INFO 34760 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1745161578219_127.0.0.1_58928
+23:25:06:686  INFO 34760 --- [nacos-grpc-client-executor-268] c.a.n.c.remote.client.grpc.GrpcClient    : [1745161578219_127.0.0.1_58928]Ignore complete event,isRunning:false,isAbandon=false
+23:25:06:688  INFO 34760 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@69268068[Running, pool size = 8, active threads = 0, queued tasks = 0, completed tasks = 269]
+23:25:06:797  INFO 34760 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+23:25:06:797  INFO 34760 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+23:25:06:798  INFO 34760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+23:25:07:316  INFO 34760 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
