@@ -17,6 +17,7 @@ import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
 import java.util.List;
@@ -43,7 +44,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private final ItemClient itemClient;
 
-//    private final CartProperties cartProperties;
+    private final CartProperties cartProperties;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -143,8 +144,8 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     private void checkCartsFull(Long userId) {
         long count = lambdaQuery().eq(Cart::getUserId, userId).count();
-        if (count >= 1) {
-            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", 1));
+        if (count >= cartProperties.getMaxItems()) {
+            throw new BizIllegalException(StrUtil.format("用户购物车课程不能超过{}", cartProperties.getMaxItems()));
         }
     }
 
