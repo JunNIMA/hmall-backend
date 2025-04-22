@@ -1,18 +1,21 @@
 package com.hmall.item.controller;
 
 
-import cn.hutool.core.thread.ThreadUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.hmall.api.dto.ItemDTO;
 import com.hmall.api.dto.OrderDetailDTO;
+import com.hmall.common.constants.MQConstants;
 import com.hmall.common.domain.PageDTO;
 import com.hmall.common.domain.PageQuery;
 import com.hmall.common.utils.BeanUtils;
+import com.hmall.item.domain.ItemOperate;
+import com.hmall.item.domain.dto.ItemMQDto;
 import com.hmall.item.domain.po.Item;
 import com.hmall.item.service.IItemService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,6 +27,8 @@ import java.util.List;
 public class ItemController {
 
     private final IItemService itemService;
+
+    private final RabbitTemplate rabbitTemplate;
 
     @ApiOperation("分页查询商品")
     @GetMapping("/page")
@@ -52,9 +57,9 @@ public class ItemController {
 
     @ApiOperation("新增商品")
     @PostMapping
-    public void saveItem(@RequestBody ItemDTO item) {
+    public void saveItem(@RequestBody ItemDTO itemDTO) {
         // 新增
-        itemService.save(BeanUtils.copyBean(item, Item.class));
+        itemService.addItem(itemDTO);
     }
 
     @ApiOperation("更新商品状态")
@@ -68,17 +73,31 @@ public class ItemController {
 
     @ApiOperation("更新商品")
     @PutMapping
-    public void updateItem(@RequestBody ItemDTO item) {
+    public void updateItem(@RequestBody ItemDTO itemDTO) {
         // 不允许修改商品状态，所以强制设置为null，更新时，就会忽略该字段
-        item.setStatus(null);
+        itemDTO.setStatus(null);
         // 更新
-        itemService.updateById(BeanUtils.copyBean(item, Item.class));
+        itemService.updateById(BeanUtils.copyBean(itemDTO, Item.class));
+        rabbitTemplate.convertAndSend(
+                MQConstants.ITEM_EXCHANGE_NAME,
+                MQConstants.ITEM_QUEUE_KEY,
+                new ItemMQDto(
+                        ItemOperate.UPDATE,
+                        itemDTO
+                )
+        );
     }
 
     @ApiOperation("根据id删除商品")
     @DeleteMapping("{id}")
     public void deleteItemById(@PathVariable("id") Long id) {
         itemService.removeById(id);
+        rabbitTemplate.convertAndSend(MQConstants.ITEM_EXCHANGE_NAME,
+                MQConstants.ITEM_QUEUE_KEY,
+                new ItemMQDto(
+                        ItemOperate.REMOVE,
+                        ItemDTO.builder().id(id).build()
+                ));
     }
 
     @ApiOperation("批量扣减库存")

@@ -2,6 +2,7 @@ package com.hmall.item.es;
 
 import cn.hutool.json.JSONUtil;
 import com.hmall.item.domain.po.ItemDoc;
+import lombok.RequiredArgsConstructor;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -28,7 +29,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-//@SpringBootTest(properties = "spring.profiles.active=local")
+@SpringBootTest(properties = "spring.profiles.active=local")
 public class ElasticSearchTest {
 
     private RestHighLevelClient client;
@@ -155,14 +156,13 @@ public class ElasticSearchTest {
         }
     }
 
-
     @BeforeEach
     void setUp() {
+        // 每个测试方法执行前都会调用它，比如：建立数据库连接、初始化ES客户端
         client = new RestHighLevelClient(RestClient.builder(
                 HttpHost.create("http://localhost:9200")
         ));
     }
-
     @AfterEach
     void tearDown() throws IOException {
         if(client != null){

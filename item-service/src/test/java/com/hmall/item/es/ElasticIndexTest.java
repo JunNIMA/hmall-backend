@@ -1,5 +1,6 @@
 package com.hmall.item.es;
 
+import lombok.RequiredArgsConstructor;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
 import org.elasticsearch.client.RequestOptions;
@@ -11,9 +12,11 @@ import org.elasticsearch.xcontent.XContentType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
+@SpringBootTest(properties = "spring.profiles.active=local")
 public class ElasticIndexTest {
 
     private RestHighLevelClient client;
